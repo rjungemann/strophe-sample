@@ -6,18 +6,18 @@ task :install do
 	
 	sh "cd vendor && git clone git://github.com/sprsquish/blather.git"
 
-	sh "cd vendor && git clone git://code.stanziq.com/strophejs && make"
-	sh "cp vendor/strophejs/strophe.js ../scripts/"
+	sh "cd vendor && git clone git://code.stanziq.com/strophejs && cd strophejs && make"
+	sh "cp vendor/strophejs/strophe.js public/scripts/"
 
 	sh "cd vendor && curl -O http://www.flensed.com/code/releases/flXHR-1.0.5.tar.gz"
 	sh "cd vendor && tar zxf flXHR-*.tar.gz && rm flXHR-*.tar.gz"
-	sh "cp vendor/flensed-*/deploy/* ../scripts/"
+	sh "cp vendor/flensed-*/deploy/* public/scripts/"
 end
 
 desc ""
 task :clean do
 	sh "rm -rf vendor"
-	sh "rm public/scripts/*.js"
+	sh "rm public/scripts/*.js public/scripts/*.vbs public/scripts/*.swf"
 end
 
 namespace :openfire do
