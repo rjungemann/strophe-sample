@@ -10,3 +10,6 @@ public/scripts/checkplayer.js
 public/scripts/strophe.js
 public/scripts/strophe.pubsub.js
 public/scripts/swfobject.js
+public/scripts/flCookie.swf
+public/scripts/flXHR.swf
+public/scripts/updateplayer.swf
