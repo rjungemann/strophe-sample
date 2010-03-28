@@ -1,0 +1,12 @@
+tmp
+vendor
+public/scripts/checkplayer.js
+public/scripts/flCookie.js
+public/scripts/flensed.js
+public/scripts/flXHR.js
+public/scripts/flXHR.vbs
+public/scripts/strophe.flxhr.js
+public/scripts/checkplayer.js
+public/scripts/strophe.js
+public/scripts/strophe.pubsub.js
+public/scripts/swfobject.js
